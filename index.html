@@ -3,6 +3,10 @@
 <head>
   <title>Camera Movement in HTML Canvas</title>
   <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
     .main-container {
         display: flex;
         width: 100%;
@@ -22,7 +26,14 @@
           <canvas id="canvas"></canvas>
         </div>
         <div class="actions-holder">
-
+            <div class="action">
+                <label for="grid-size-selector">Grid Size</label>
+                <input id="grid-size-selector" type="range" min="5" max="50">
+            </div>
+            <div class="action">
+                <label for="grid-lines">Grid Lines</label>
+                <input id="grid-lines" type="checkbox" checked>
+            </div>
         </div>
     </div>
 </body>
